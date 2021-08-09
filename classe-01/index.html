@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto "Galeria"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/spacing.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body class="flex-row">
+    <aside class="side-menu hidden flex-collum">
+        <button class="side-menu__button side-menu__button--open">
+            <img src="./assets/closed-menu.svg" alt="Menu Fechado">
+        </button>
+        <button class="side-menu__button flex-row align-center">
+            <img src="./assets/active-home.svg" alt="Home">
+            <span>Início</span>
+        </button>
+        <button class="side-menu__button flex-row align-center">
+            <img src="./assets/inactive-like.svg" alt="Favoritos">
+            <span>Favoritos</span>
+        </button>
+        <button class="side-menu__button mt-auto flex-row align-center">
+            <img src="./assets/inactive-settings.svg" alt="Configurações">
+            <span>Configurações</span>
+        </button>
+    </aside>
+
+    <main class="main">
+        <h1 class="main__title">Início</h1>
+        <div class="gallery flex-row flex-wrap justify-center">
+
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 1.png" alt="Hamster" data-indice="0">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 2.png" alt="Gato" data-indice="1">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 3.png" alt="Husky" data-indice="2">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 4.png" alt="Macaco" data-indice="3">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 5.png" alt="Borboleta" data-indice="4">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 6.png" alt="Onça" data-indice="5">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 7.png" alt="Raposa" data-indice="6">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 8.png" alt="Raposa Branca" data-indice="7">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 9.png" alt="Tartaruga" data-indice="8">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="like">
+                    <img class="item__img" src="./assets/gallery/image 10.png" alt="Leão" data-indice="9">
+                    <img class="like__img display-none" src="./assets/like.svg" alt="">
+                </div>
+
+                <div class="flex-row justify-between">
+                    <span>Lorem ipsum</span>
+                    <span>há 1 mês</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal display-none flex-row align-center justify-center">
+        <img class="modal__button--close" src="./assets/close-modal.svg" alt="">
+        <img class="modal__button--previous" src="./assets/prev.svg" alt="">
+        <div class="like">
+            <img class="modal__image">
+            <img id="like" class="like__img display-none" src="./assets/like.svg" alt="">
+        </div>
+        <img class="modal__button--next" src="./assets/next.svg" alt="">
+
+    </div>
+</body>
+
+</html>

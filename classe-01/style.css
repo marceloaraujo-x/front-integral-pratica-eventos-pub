@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-menu {
+    background: #313131;
+
+    padding: 20px;
+
+    gap: 40px;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.side-menu.hidden span {
+    display: none;
+}
+.side-menu__button {
+    all: unset;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.main {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main__title {
+    margin-bottom: 40px;
+}
+.gallery {
+    gap: 30px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    gap: 100px;
+}
+.modal__button--close {
+    position: fixed;
+    top: 90px;
+    right: 45px;
+    cursor: pointer;
+}
+.modal__button--previous {
+    cursor: pointer;
+}
+.modal__button--next {
+    cursor: pointer;
+}
+.item {
+    cursor: pointer;
+}
+.like {
+    position: relative;
+}
+.like__img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
