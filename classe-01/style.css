@@ -9,7 +9,7 @@ body {
 
 .side-menu {
     background: #313131;
-
+    color: #888888;;
     padding: 20px;
 
     gap: 40px;
@@ -26,6 +26,9 @@ body {
     all: unset;
     cursor: pointer;
     box-sizing: border-box;
+}
+.side-menu__button img {
+    margin-right: 25px;
 }
 .main {
     flex-grow: 1;

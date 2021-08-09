@@ -22,6 +22,14 @@ function posicao() {
         modalNextButton.classList.remove('display-none')
     }
 }
+function likeAtivo() {
+    if (like[contador].classList.contains('display-none')) {
+        modalLike.classList.add('display-none')
+
+    } else {
+        modalLike.classList.remove('display-none')
+    }
+}
 let contador = 0;
 
 menuButton.addEventListener('click', function () {
@@ -34,11 +42,13 @@ galleryImage.forEach(imagem => imagem.addEventListener('click', function (event)
     modalImage.src = event.target.src
     contador = Number(event.target.dataset.indice);
     posicao();
+    likeAtivo()
 }))
 
 modalImage.addEventListener('dblclick', function () {
     like[contador].classList.toggle('display-none')
     modalLike.classList.toggle('display-none')
+
 })
 
 
@@ -46,12 +56,14 @@ modalPreviousButton.addEventListener('click', function () {
     contador--;
     modalImage.src = galleryImage[contador].src;
     posicao();
+    likeAtivo()
 })
 
 modalNextButton.addEventListener('click', function () {
     contador++;
     modalImage.src = galleryImage[contador].src;
     posicao();
+    likeAtivo()
 })
 
 
@@ -59,7 +71,6 @@ modalNextButton.addEventListener('click', function () {
 
 modalCloseButton.addEventListener('click', function () {
     modal.classList.add('display-none')
-    modalLike.classList.add('display-none')
 })
 
 
